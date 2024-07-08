@@ -5,11 +5,11 @@ It is currently mostly a solo project by [KnownSH](https://github.com/KnownSH) a
 
 ```
 export function LifeSkips(RB, Money) {
-  local Cost = RebornPrice(RB)
+  local const Cost = RebornPrice(RB)
 
   return :blk {
     for i = 20..1 {
-      local Price = Cost * (10^(3*i))
+      local const Price = Cost * (10^(3*i))
       if Money > Price return :blk i
     }
   } else 0
