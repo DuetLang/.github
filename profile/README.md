@@ -7,7 +7,7 @@ DergLang Example:
 ```
 MoneyLib.derg
 --! Example taken and translated from Miners Haven's MoneyLib
-export function LifeSkips(RB, Money) {
+export fn LifeSkips(RB, Money) {
   const Cost = RebornPrice(RB)
   return :blk {
     for i = 20..1 {
